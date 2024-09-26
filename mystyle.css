@@ -1,0 +1,130 @@
+body {
+	font-family: Georgia;
+	background-color: whitesmoke;
+}
+
+#big-title {
+	color:Black;
+	font-size: 25px;
+	padding: 0.6em;
+	margin: 0.6rem;
+}
+
+.menu-button {
+	background-color: 	transparent;
+	border: none;
+	border-radius: 	4px;
+	font-size: 20px;
+	font-weight: bold;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-delay: 0s;
+	padding: 0.6em;
+	margin: 1rem;
+	cursor: pointer;
+}
+@keyframes drpdwn {
+	0% {transform: translateY(-60px) scaleY(0.5);}
+	100% { transform: translateY(0px) scaleY(1.0);}
+}
+
+.menu-button:hover {
+	transform: translateY(-5px);
+	color: gray ;
+}
+.dropdownbtn {
+	background-color: 	transparent;
+	border: none;
+	border-radius: 	4px;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0.6em;
+	margin: 1rem;
+}
+.dropdownbtn:hover {color: gray;}
+.dropdownbtn{
+	display: inline-block;
+	position: relative;
+}
+.dropdown {
+	display: none;
+	position: absolute;
+	font-weight: bold;
+}
+.dropdown a {
+	transform: translateX(-10px);
+	text-decoration: none;
+	display: flex;
+	padding: 8px 0px;
+}
+.dropdownbtn:hover .dropdown{
+	animation-name: drpdwn;
+	animation-timing-function: ease-out;
+	animation-duration: 0.3s;
+	display: block;
+
+}
+
+.content{
+	color: black;
+	font-size: 17px;
+}
+.content:hover {
+	color: gray;
+
+}
+
+.Aboutme {
+	text-align: center;
+	margin: 50px;
+
+}
+@keyframes appear {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+.description {
+	margin: 5% 10%;
+	font-size: 20px;
+	animation-name: appear;
+	animation-duration: 2s;
+}
+
+.item1 { grid-area: my-port;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+.item2 { grid-area: about }
+.item3 { grid-area: eap }
+.item4 { grid-area: math }
+.item5 { grid-area: phys }
+.item6 { grid-area: progr }
+.item7 { grid-area: desc;
+	margin-top: 5%;
+ }
+
+.grid-container{
+	display: grid;
+	grid-template-areas:
+	'my-port my-port about eap math phys progr'
+	'desc desc desc desc desc desc desc';
+	gap: 0px;
+	background-color:whitesmoke;
+	text-align: center;
+	margin: 0%;
+}
+
+.journal {
+	margin: 1% 55% 15% 5%;
+	text-align: left;
+}
+
+.date {
+	margin: 15% 5% 2px ;
+	text-align: left;
+	font-style: italic;
+	opacity: 0.9;
+
+}
