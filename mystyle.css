@@ -165,7 +165,7 @@ input:checked~img.expand_down{
 	transform: rotate(180deg);
 }
 .date_essay{
-	margin: 0px 5%;
+	margin: 0px 5% 10%;
 	text-align: left;
 	font-style: italic;
 	opacity: 0.9;
