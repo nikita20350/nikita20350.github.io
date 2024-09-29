@@ -141,7 +141,8 @@ body {
 	font-weight: 550;
 	text-align: left;
 	display: flex;
-	margin-left: 50px;
+	margin-left: 40px;
+	padding-top: 12px;
 }
 input, div.essay1 {
 	position: absolute;
@@ -151,7 +152,6 @@ input, div.essay1 {
 .expand_down {
 	position: absolute;
 	display: flex;
-	top:277px;
 }
 input:checked~div.essay1{
 	display: block;
