@@ -117,15 +117,20 @@ body {
 }
 
 .journal {
-	margin: 1% 55% 15% 5%;
-	text-align: left;
+	margin: 1% 13%;
+	font-weight: 500;
+	text-align: center;
+	position: relative;
+	font-size: 20px;
+	line-height: 30px;
 }
 
 .date {
 	margin: 15% 5% 2px ;
-	text-align: left;
+	text-align: center;
 	font-style: italic;
 	opacity: 0.9;
+	font-size: 16px;
 
 }
 .c6{color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:17.5pt;font-family:"Open Sans";font-style:normal; margin-top: 50%}
